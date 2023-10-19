@@ -1,0 +1,40 @@
+@import "variables";
+@import "typography";
+
+:root {
+  @extend %variables;
+  @extend %colors;
+}
+
+html,
+body {
+  font-family: 'DM Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--color-background);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.App {
+  margin: 40px 0
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.hidden {
+  display: none;
+}

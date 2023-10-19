@@ -1,0 +1,43 @@
+.friendsTableItem {
+  td {
+    height: 40px;
+    border-bottom: 2px solid var(--color-accent);
+    padding: 6px 18px;
+  }
+
+  .friendsTableItemButtons {
+    display: flex;
+    gap: 8px;
+    justify-content: end;
+
+    .friendsTableItemButton {
+      width: 30px;
+      height: 30px;
+      padding: 0;
+      background-color: transparent;
+      border: 2px solid var(--color-accent);
+      fill: var(--neutral-5);
+      position: relative;
+
+      .buttonTooltip {
+        display: none;
+      }
+
+      &:hover {
+        background-color: var(--primary-blue);
+        fill: var(--neutral-7);
+
+        .buttonTooltip {
+          display: block;
+        }
+      }
+    }
+
+    .deleteBtn {
+      &:hover {
+        background-color: var(--primary-red);
+        fill: var(--neutral-7);
+      }
+    }
+  }
+}

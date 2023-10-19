@@ -1,0 +1,119 @@
+.selectWrapper {
+  position: relative;
+
+  .selectButton {
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid var(--color-accent);
+    padding: 4px 18px;
+    border-radius: 50px;
+    transition: 0.2s;
+    cursor: pointer;
+
+    .selectButtonText {
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    .selectPlaceholder {
+      opacity: 0.8;
+    }
+
+    &:hover {
+      background-color: var(--color-accent);
+    }
+
+    &_opened {
+      box-shadow: var(--box-shadow);
+      background-color: var(--primary-blue);
+      color: white;
+
+      &:hover {
+        background-color: var(--primary-blue);
+      }
+    }
+  }
+
+  .selectDropdown {
+    display: block;
+    z-index: 1;
+    top: 40px;
+    border: 1px solid var(--color-accent);
+
+    position: absolute;
+    width: 100%;
+    max-height: 256px;
+    overflow: auto;
+
+    &_opened {
+      display: block;
+    }
+  }
+
+  .selectError {
+    color: tomato;
+    margin-top: 2px;
+    margin-bottom: -10px;
+    font-size: 10pt;
+  }
+}
+
+.optionButton {
+  border: none;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  padding: 4px 12px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--color-background);
+  }
+}
+
+.optionWithDropdown {
+
+  .optionDropdown {
+    display: none;
+    margin-bottom: 16px;
+    border-bottom: 1px solid var(--color-accent);
+
+    &_opened {
+      display: block;
+    }
+  }
+}
+
+.optionDivider {
+  height: 1px;
+}
+
+.selectButtonUtils {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.clearButton {
+  display: grid;
+  place-items: center;
+  padding: 0;
+  margin: 0;
+  border: 1px solid var(--color-accent);
+  border-radius: 50%;
+}
+
+.selectDropdownArrow {
+  display: flex;
+  align-items: center;
+  transition: 0.15s;
+
+  &_rotated {
+    rotate: 180deg;
+  }
+}

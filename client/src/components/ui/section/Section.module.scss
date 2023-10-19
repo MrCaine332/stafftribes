@@ -1,0 +1,18 @@
+.section {
+  box-shadow: var(--box-shadow-darker);
+  background-color: var(--color-background-secondary);
+  border-radius: 8px;
+
+  padding: 20px 20px;
+
+  width: 100%;
+
+
+  @media screen and (max-width: 510px) {
+    padding: 24px 20px;
+  }
+
+  &_p_0 {
+    padding: 0;
+  }
+}

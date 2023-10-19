@@ -1,0 +1,13 @@
+{
+  "startingWeek": 42,
+  "year": 2023,
+  "availability": [
+    { "isAvailable":  true, "days": [0, 1] },
+    { "isAvailable":  true, "days": [1, 2] },
+    { "isAvailable":  true, "days": [2, 3] },
+    { "isAvailable":  true, "days": [3, 4] },
+    { "isAvailable":  true, "days": [4, 5] },
+    { "isAvailable":  true, "days": [5, 6] },
+    { "isAvailable":  true, "days": [1, 2] }
+  ]
+}

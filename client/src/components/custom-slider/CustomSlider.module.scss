@@ -1,0 +1,26 @@
+.slider {
+  .sliderTrack {
+    background-color: var(--primary-blue);
+  }
+
+  .sliderHandle {
+    background-color: var(--primary-blue-darker);
+    border: none;
+    opacity: 1;
+    transition: 0.1s;
+  }
+
+  .sliderHandle:after {
+    position: absolute;
+    content: "";
+    width: 22px;
+    height: 22px;
+    background-color: var(--primary-blue-darker);
+    top: -30px;
+    left: -4px;
+    transform: rotate(45deg);
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+  }
+}

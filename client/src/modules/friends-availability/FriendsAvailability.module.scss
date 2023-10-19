@@ -1,0 +1,72 @@
+.friendsAvailability {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  overflow: auto;
+
+  .friendsAvailabilityTitle {
+    padding: 20px 20px 0 20px;
+  }
+
+  .divider {
+    background-color: var(--neutral-5);
+    margin: auto;
+  }
+
+  .friendsAvHeader {
+    height: 70px;
+    border-bottom: 2px solid var(--color-accent);
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 0 16px;
+
+    .friendsFilter {
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      gap: 20px;
+
+      .friendsFilterButton {
+        height: 32px;
+        background-color: transparent;
+        border: 2px solid var(--color-accent);
+        padding: 0 12px;
+        display: grid;
+        place-items: center;
+        border-radius: 50px;
+        transition: 0.15s;
+
+        &_selected {
+          background-color: var(--primary-blue);
+          color: white;
+          opacity: 0.85;
+        }
+      }
+
+      .select_selected {
+        background-color: var(--primary-blue);
+        color: white;
+      }
+    }
+  }
+  .friendsTableWrapper {
+    flex-grow: 1;
+    position: relative;
+
+    .friendsTable {
+      width: 100%;
+      thead {
+        opacity: 0.7;
+        background-color: var(--primary-blue);
+        color: white;
+        height: 36px;
+        text-align: left;
+      }
+
+      td, th {
+        padding: 0 12px;
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Poppins:wght@400;500;600;700&display=swap');
+
+
+//////////////////// [ BODY TEXT ] ////////////////////
+
+@mixin textPoppins($font-weight, $font-size, $line-height) {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: var(--color-text-primary);
+}
+
+.textBody {
+  @include textPoppins(400, 18px, 20px);
+}
+
+.textBodyBold {
+  @include textPoppins(600, 18px, 20px);
+}
+
+.textBodyLarge {
+  @include textPoppins(400, 24px, 32px);
+}
+
+.textBodyLargeBold {
+  @include textPoppins(600, 24px, 32px);
+}
+
+.textBodySmall {
+  @include textPoppins(400, 14px, 24px);
+}
+
+.textBodySmallBold {
+  @include textPoppins(500, 14px, 24px);
+}
+
+
+//////////////////// [ BUTTONS ] ////////////////////
+
+.textButton {
+   font-family: 'DM Sans';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 14px;
+ }

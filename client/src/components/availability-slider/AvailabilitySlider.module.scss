@@ -1,0 +1,50 @@
+.availabilitySlider {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+
+  .availabilityToggler {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-top: 4px;
+    gap: 8px;
+    width: 96px;
+
+    input {
+      width: 14px;
+      height: 14px;
+    }
+  }
+
+  .sliderWrapper {
+    flex-grow: 1;
+  }
+
+  .sliderDisabled {
+    opacity: 0.3;
+  }
+
+  .availabilityButtons {
+    display: flex;
+    gap: 8px;
+    margin-top: 4px;
+    fill: var(--neutral-4);
+
+    button {
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      transition: 0.1s;
+      &:hover {
+        background-color: var(--primary-blue);
+        fill: white;
+      }
+    }
+  }
+}
